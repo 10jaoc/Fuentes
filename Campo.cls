@@ -17,9 +17,9 @@ Option Explicit
 Dim M_ErrNum As Variant
 Dim M_ErrDesc As Variant
 '------------------------------------------------------------
-' Funci髇: bCSA_ValidarCampoNumerico
-'          Comprueba si el dato pasado por par醡etro es num閞ico o no.
-'          La funci髇 devuelve True si el campo es correcto.
+' Funci贸n: bCSA_ValidarCampoNumerico
+'          Comprueba si el dato pasado por par谩metro es num茅rico o no.
+'          La funci贸n devuelve True si el campo es correcto.
 '          En caso contrario devuelve False.
 '
 ' Autor: CSA
@@ -34,17 +34,10 @@ Function bCSA_ValidarCampoNumerico(vCampoNumerico As Variant) As Boolean
  
 End Function
 
-
-
-
-
-
-
-
 '------------------------------------------------------------
-' Funci髇: bCSA_ValidarCampoNulo
+' Funci贸n: bCSA_ValidarCampoNulo
 '          Comprueba si el dato pasado por parametro es nulo o no.
-'          La funci髇 devuelve True si el campo es correcto.
+'          La funci贸n devuelve True si el campo es correcto.
 '          En caso contrario devuelve False.
 '
 ' Autor: CSA
@@ -59,11 +52,10 @@ Function bCSA_ValidarCampoNulo(vCampoNulo As Variant) As Boolean
 
 End Function
 
-
 '------------------------------------------------------------
-' Funci髇: bCSA_ValidarCampoNuloN鷐erico
-'          Comprueba si el dato pasado por par醡etro es nulo o no.
-'          La funci髇 devuelve True si el campo no es nulo.
+' Funci贸n: bCSA_ValidarCampoNuloN煤merico
+'          Comprueba si el dato pasado por par谩metro es nulo o no.
+'          La funci贸n devuelve True si el campo no es nulo.
 '          En caso contrario devuelve False.
 '
 ' Autor: CSA
@@ -85,18 +77,12 @@ Function bCSA_ValidarCampoNuloNumerico(vCampoNulo As Variant) As Boolean
 End Function
 
 
-
-
-
-
-
-
 '------------------------------------------------------------
-' Funci髇: bCSA_ValidarCampoFecha
-'          Comprueba si el dato pasado por par醡etro es de tipo fecha o no.
-'          La funci髇 devuelve True si el campo es correcto.
+' Funci贸n: bCSA_ValidarCampoFecha
+'          Comprueba si el dato pasado por par谩metro es de tipo fecha o no.
+'          La funci贸n devuelve True si el campo es correcto.
 '          En caso contrario devuelve False.
-' Autor: Carmen Casta馿da
+' Autor: Carmen Casta帽eda
 '
 '------------------------------------------------------------
 Function bCSA_ValidarCampoFecha(vCampoFecha As Variant) As Boolean
@@ -108,17 +94,11 @@ Function bCSA_ValidarCampoFecha(vCampoFecha As Variant) As Boolean
     End If
 
 End Function
-
-
-
-
-
-
 '------------------------------------------------------------
-' Funci髇: bCSA_ValidarCampoNuloFecha
-'          Comprueba si el dato pasado por par醡etro es Nulo para Fecha
+' Funci贸n: bCSA_ValidarCampoNuloFecha
+'          Comprueba si el dato pasado por par谩metro es Nulo para Fecha
 '          es decir si es (__/__/____) o no.
-'          La funci髇 devuelve True si el campo es no nulo.
+'          La funci贸n devuelve True si el campo es no nulo.
 '          En caso contrario devuelve False.
 '
 ' Autor: CSA
@@ -134,15 +114,11 @@ Public Function bCSA_ValidarCampoNuloFecha(vCampoFecha As Variant) As Boolean
 
 End Function
 
-
-
-
-
 ''------------------------------------------------------------
-' Funci髇: bCSA_ValidarIntervaloFecha
-'          Comprueba si los datos pasados por par醡etro
+' Funci贸n: bCSA_ValidarIntervaloFecha
+'          Comprueba si los datos pasados por par谩metro
 '          estan en orden creciente de fecha o no.
-'          La funci髇 devuelve True si son correctos.
+'          La funci贸n devuelve True si son correctos.
 '          En caso contrario devuelve False.
 '
 ' Autor: CSA
@@ -168,8 +144,8 @@ End Function
 
 
 '------------------------------------------------------------
-' Funci髇: sCSA_SustituirCaracteres
-'          Devuelve una cadena pasada por parametro despu閟 de
+' Funci贸n: sCSA_SustituirCaracteres
+'          Devuelve una cadena pasada por parametro despu茅s de
 '          haber sustituido los caracteres pasados (Old) por otros (New).
 '
 ' Autor: CSA
@@ -210,8 +186,8 @@ End Function
 
 
 '------------------------------------------------------------
-' Funci髇: sCSA_NumerALetra
-'          Devuelve la cantidad pasada por par醡etro en letras.
+' Funci贸n: sCSA_NumerALetra
+'          Devuelve la cantidad pasada por par谩metro en letras.
 '
 ' Autor: CSA
 '------------------------------------------------------------
@@ -328,7 +304,7 @@ Function sCSA_NumeroALetra(nCantidadAnalizada As Long, bCambio As Boolean) As St
     Exit Function
     
 
-'Rutina de conversi髇 de grupos
+'Rutina de conversi贸n de grupos
 Conversion:
     nCantidad = CInt(sGrupo)
     If nCantidad = 100 Then
@@ -370,9 +346,9 @@ End Function
 
 
 '------------------------------------------------------------
-' Funci髇: sCSA_NumeroAMes
-'          Devuelve el mes en letra correspondiente al n鷐ero
-'          pasado por par醡etro
+' Funci贸n: sCSA_NumeroAMes
+'          Devuelve el mes en letra correspondiente al n煤mero
+'          pasado por par谩metro
 '
 ' Autor: CSA
 '------------------------------------------------------------
